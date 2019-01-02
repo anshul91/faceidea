@@ -44,7 +44,7 @@ class AdminCandidates extends CI_Controller {
   
     
     public function add_candidate() {
-        
+        print_r($_FILES);die;
         $this->load->library('faceset');
         $resp_arr = array();
         if ($this->input->post() && $this->input->server("REQUEST_METHOD") === 'POST') {
@@ -58,6 +58,7 @@ class AdminCandidates extends CI_Controller {
             $this->form_validation->set_rules('department_id', 'Department', 'trim|required');
             $this->form_validation->set_rules('designation_id', 'Designation', 'trim|required');
             if (!$this->form_validation->run()) {
+				
                 $resp_arr = array("msg" => validation_errors(), "msg_type" => "error", "status" => 0);
             } else {
                 $data_arr['candidate_detail'] = array(
