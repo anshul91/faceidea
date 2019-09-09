@@ -27,7 +27,7 @@ if (is_array($firm_detail) && isset($firm_detail[0])) {
         <script type="text/javascript" src="<?php echo JS_URL; ?>adminUsers/adminUsers.js"></script>
         <noscript>
     <div>
-        <H1>Please enable "JAVASCRIPT" in order to use this portal. this is user is this</h1>
+        <H1>Please enable "JAVASCRIPT" in order to use this portal. this is user is this asdf</h1>
     </div>
     </noscript>
 </head>
