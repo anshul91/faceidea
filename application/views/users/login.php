@@ -28,7 +28,9 @@ if (is_array($firm_detail) && isset($firm_detail[0])) {
         <noscript>
     <div>
         <H1>Please enable "JAVASCRIPT" in order to use this portal. this is user</h1>
-    </div>
+    ashish </div>
+
+    sharma
     </noscript>
 </head>
 <body>
