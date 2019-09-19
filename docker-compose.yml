@@ -1,0 +1,17 @@
+version: '2'
+
+services: 
+	php: ./docker/php
+	volumes: 
+		- ./:/var/www
+		- /var/log/apache2/faceidea:/var/log/apache2/
+	ports:
+		- '8000:81'
+	environment:
+		-VIRTUAL_HOST=abc.com
+	depends_on:
+		-db
+
+	db:
+	build: ./docker/mysql
+	

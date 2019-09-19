@@ -1,4 +1,5 @@
 <?php
+die("i m here");
 /**
  * CodeIgniter
  *
