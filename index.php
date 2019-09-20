@@ -1,5 +1,5 @@
 <?php
-die("i m here");
+print_R("its here jenkins");die("installed jenkins");
 /**
  * CodeIgniter
  *
